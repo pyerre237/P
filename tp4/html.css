@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Chaque bloc prend une part égale de l'espace */
+}
+
+.block1 {
+    background-color: #e3f2fd; /* Couleur douce pour le premier bloc */
+}
+
+.block2 {
+    background-color: #ffecb3; /* Couleur douce pour le deuxième bloc */
+    text-align: center; /* Centrer le contenu du bloc 2 */
+}
+
+.block3 {
+    background-color: #ffe0b2; /* Couleur douce pour le troisième bloc */
+    text-align: right; /* Aligner le contenu du bloc 3 à droite */
+}
+
+h2 {
+    margin: 0 0 10px;
+}
