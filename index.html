@@ -1,23 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio de Pierre BTS SIO 1.1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url('https://images2.alphacoders.com/850/thumb-1920-850871.jpg');
+            background-size: 80%; /* Réduit la taille de l'image */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat; /* Évite la répétition de l'image */
+            animation: backgroundAnimation 20s infinite alternate;
+            height: 100vh; /* Prend toute la hauteur de la fenêtre */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                opacity: 0.9;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 0.9;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+            padding: 10px 20;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            color: #ff6600;
+            transform: scale(1.1);
+            border: 2px solid #ff6600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
-<body bgcolor="lightpink"></body>
 
-<h1>Sommaire</h1>
-<h2>Pierre BTS SIO 1.1</h2>
-<a href="tp1/index.html">TP1</a><br>
-<a href="ecole ingetis/ecole.ingetis.html">Ecole Ingetis</a><br>
-<a href="Mission1/index.html">Mission 1</a><br>
-<a href="tp2/index.html">TP2</a><br>
-<a href="mission2/index.html">Mission2</a><br>
-<a href="mission 3/index.html">Mission3</a></br>
-<a href="tp4/index.html">Tp4</a>
-</br>
+    <h1>Portfolio de Pierre</h1>
+    <h2>BTS SIO 1.1</h2>
+    
+    <a href="tp1/index.html">TP1</a>
+    <a href="ecole ingetis/ecole.ingetis.html">Ecole Ingetis</a>
+    <a href="Mission1/index.html">Mission 1</a>
+    <a href="tp2/index.html">TP2</a>
+    <a href="mission2/index.html">Mission 2</a>
+    <a href="mission 3/index.html">Mission 3</a>
+    <a href="tp4/index.html">TP4</a>
+    <a href="tp5/index.html">TP5</a>
+    <a href="MISSION 5/index.html">Mission 5</a>
+    
+    <footer>
+        &copy; 2024 Pierre. Tous droits réservés.
+    </footer>
 
 </body>
 </html>
