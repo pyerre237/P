@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="identification.js"></script>
+</head>
+<body bgcolor="pink">
+
+    <center>
+        <!-- Conteneur principal de connexion -->
+        <div class="container">
+            <!-- Titre -->
+            <h1><u>Identification</u></h1>
+
+            <!-- Formulaire de connexion -->
+            <form class="form">
+                <div class="form-group">
+                    <label for="username"><b>Nom d'utilisateur</b></label>
+                    <input type="text" id="t1" name="username" placeholder="Entrez votre nom d'utilisateur">
+                </div>
+
+                <div class="form-group">
+                    <label for="password"><b>Mot de passe</b></label>
+                    <input type="password" id="h1" name="password" placeholder="Entrez votre mot de passe">
+                </div>
+
+                <div class="buttons">
+                    <button type="button" onclick="login()">Se connecter</button>
+                    <button type="button" onclick="retour()">Annuler</button>
+                </div>
+            </form>
+        </div>
+    </center>
+
+    <script>
+        function login() {
+            alert("Connexion réussie !");
+        }
+
+        function retour() {
+            alert("Retour à l'accueil.");
+        }
+    </script>
+
+</body>
+</html>
+

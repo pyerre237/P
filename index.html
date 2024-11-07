@@ -10,28 +10,26 @@
             padding: 0;
             font-family: Arial, sans-serif;
             color: white;
-            background-image: url('https://images2.alphacoders.com/850/thumb-1920-850871.jpg');
-            background-size: 80%; /* Réduit la taille de l'image */
-            background-position: center; /* Centre l'image */
-            background-repeat: no-repeat; /* Évite la répétition de l'image */
-            animation: backgroundAnimation 20s infinite alternate;
             height: 100vh; /* Prend toute la hauteur de la fenêtre */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative; /* Position relative pour le contenu */
+            overflow: hidden; /* Évite les débordements */
         }
 
-        @keyframes backgroundAnimation {
-            0% {
-                opacity: 0.9;
-            }
-            50% {
-                opacity: 0.7;
-            }
-            100% {
-                opacity: 0.9;
-            }
+        video {
+            position: absolute; /* Fixe la vidéo en arrière-plan */
+            top: 50%; /* Centre verticalement */
+            left: 50%; /* Centre horizontalement */
+            min-width: 100%; /* S'assurer qu'elle couvre toute la largeur */
+            min-height: 100%; /* S'assurer qu'elle couvre toute la hauteur */
+            width: auto; /* Largeur automatique */
+            height: auto; /* Hauteur automatique */
+            z-index: -1; /* En arrière-plan */
+            transform: translate(-50%, -50%); /* Centrage */
+            opacity: 0.8; /* Légère transparence */
         }
 
         h1 {
@@ -55,7 +53,7 @@
             color: #ffcc00;
             text-decoration: none;
             transition: color 0.3s, transform 0.3s;
-            padding: 10px 20;
+            padding: 10px 20px; /* Corrige l'espace autour du lien */
             border: 2px solid transparent;
             border-radius: 5px;
         }
@@ -76,6 +74,11 @@
 </head>
 <body>
 
+    <video autoplay muted loop>
+        <source src="v12044gd0000csggfdnog65uokr0tlb0.MOV" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+
     <h1>Portfolio de Pierre</h1>
     <h2>BTS SIO 1.1</h2>
     
@@ -88,6 +91,7 @@
     <a href="tp4/index.html">TP4</a>
     <a href="tp5/index.html">TP5</a>
     <a href="MISSION 5/index.html">Mission 5</a>
+    <a href="tp6/index.html">TP6</a>
     
     <footer>
         &copy; 2024 Pierre. Tous droits réservés.
