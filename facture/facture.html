@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture en JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="facture.js"></script>
+
+    <style>
+ 
+    </style>
+</head>
+<body>
+    <h1>Facture en JavaScript</h1>
+    <div class="container">
+        <table>
+            <tr>
+                <td>Article</td>
+                <td>Prix</td>
+                <td>Quantité</td>
+            </tr>
+            <!-- Ligne 1 -->
+            <tr>
+                <td>E1</td>
+                <td><input type="number" id="prix1" class="input-box" placeholder="Entrez le prix"></td>
+                <td><input type="number" id="quantite1" class="input-box" placeholder="Entrez la quantité"></td>
+            </tr>
+            <!-- Ligne 2 -->
+            <tr>
+                <td>E2</td>
+                <td><input type="number" id="prix2" class="input-box" placeholder="Entrez le prix"></td>
+                <td><input type="number" id="quantite2" class="input-box" placeholder="Entrez la quantité"></td>
+            </tr>
+            <!-- Ligne 3 -->
+            <tr>
+                <td>E3</td>
+                <td><input type="number" id="prix3" class="input-box" placeholder="Entrez le prix"></td>
+                <td><input type="number" id="quantite3" class="input-box" placeholder="Entrez la quantité"></td>
+            </tr>
+        </table>
+        
+        <button class="button" onclick="reinitialiser()">Réinitialiser</button>
+        <button class="button" onclick="calculerTotal()">Résultat</button>
+
+        <h2 id="resultat">Total : 0 €</h2>
+    </div>
+    <button class="back-button"><a href="../index.html">Retour</a></button>
+    
+
+    <script>
+   
+    </script>
+</body>
+</html>
